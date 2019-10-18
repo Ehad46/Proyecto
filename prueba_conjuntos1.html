@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<style>
+		.contorno{
+			stroke:green;
+			stroke-width:2;
+			fill:transparent;
+		}
+		.A{
+		  r:70;
+		  cx:71;
+		  cy:71;
+		}
+		.B{
+		  r:70;
+		  cx:171;
+		  cy:71;
+		}
+		.C{
+		  r:70;
+		  cx:121;
+		  cy:161;
+		}
+		.borrar{
+			width:100%;
+		    height:100%;
+		    fill:white;
+		}
+	</style>
+	<svg width="500" height="500">
+		<defs>
+		    <mask id="A">
+		      <rect class="borrar"/>
+		      <circle class="A" fill="black"/>
+		    </mask>
+		    <mask id="B">
+		      <rect class="borrar"/>
+		      <circle class="B" fill="black"/>
+		    </mask>
+		    <mask id="C">
+		      <rect class="borrar"/>
+		      <circle class="C" fill="black"/>
+		    </mask>
+		    <mask id="AB">
+		      <rect class="borrar"/>
+		      <circle class="A" fill="black"/>
+		      <circle class="B" fill="black"/>
+		    </mask>
+		    <mask id="AC">
+		      <rect class="borrar"/>
+		      <circle class="A" fill="black"/>
+		      <circle class="C" fill="black"/>
+		    </mask>
+		    <mask id="BC">
+		      <rect class="borrar"/>
+		      <circle class="B" fill="black"/>
+		      <circle class="C" fill="black"/>
+		    </mask>
+		    <mask id="BCi">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="A" mask="url(#BC)" />
+		    </mask>
+		    <mask id="BCi2">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="A" mask="url(#BCi)" />
+		    </mask>
+		    <mask id="BCi3">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="C" mask="url(#BCi2)" />
+		    </mask>
+		    <mask id="BCi3c">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="B" mask="url(#BCi2)" />
+		    </mask>
+
+		    <mask id="ABi">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="C" mask="url(#AB)" />
+		    </mask>
+		    <mask id="ABi2">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="C" mask="url(#ABi)" />
+		    </mask>
+	    	<mask id="ABi3">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="B" mask="url(#ABi2)" />
+		    </mask>
+		    <mask id="ABi3c">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="B" mask="url(#ABi3)" />
+		    </mask>
+		    <mask id="ABi3centro">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="C" mask="url(#BCi3)" />
+		    </mask>
+		    <mask id="ABi3centro1">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="A" mask="url(#ABi3centro)" />
+		      <circle id="donutA"  class="A" mask="url(#ABi3c)" />
+		    </mask>
+		    <mask id="centro">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="A" mask="url(#ABi3centro)" />
+		    </mask>
+		    <mask id="ACe">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="A" mask="url(#ABi3centro1)" />
+		      <circle id="donutA"  class="A" mask="url(#ABi3centro)" />
+		    </mask>
+		    <mask id="ABe">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="A" mask="url(#ABi3centro1)" />
+		      <circle id="donutA"  class="B" mask="url(#ACe)" />
+		    </mask>
+		    <mask id="BCe">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="A" mask="url(#ABi3centro1)" />
+		      <circle id="donutA"  class="C" mask="url(#AB)" />
+		      <circle id="donutA"  class="A" mask="url(#ABi)" />
+		    </mask>
+		    <mask id="ABC">
+		      <rect class="borrar"/>
+		      <circle id="donutA"  class="A" />
+		      <circle id="donutA"  class="B" />
+		      <circle id="donutA"  class="C" />
+		    </mask>
+		</defs>
+		<circle class="A contorno" />
+		<circle class="B contorno"  />
+		<circle class="C contorno" />
+
+	<circle class="B" mask="url(#ABe)" />			<!--4-->
+<circle class="C" mask="url(#BCe)" />			<!--5-->
+<circle class="A" mask="url(#ACe)" />			<!--6-->
+<rect width="241" height="231" class="rectan" mask="url(#ABC)">	<!--8-->
+		Sorry, your browser does not support inline SVG.
+	</svg>
+	</body>
+</html>

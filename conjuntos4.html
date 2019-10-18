@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<style type="text/css" media="screen">
+  			@import 'estilos.css';
+  			@import 'estilos4.css';
+		</style>
+		<svg width="500" height="500">
+			<defs>
+			    <mask id="s1">
+			    	<rect class="borrar"/>
+			      <circle class="circulo D"  />
+			      <circle class="circulo C"/>
+			      <circle class="circulo B"/>
+			    </mask>
+			    <mask id="s2">
+			    	<rect class="borrar"/>
+			      <circle class="circulo D"  />
+			      <circle class="circulo C"/>
+			      <circle class="circulo A"/>
+			    </mask>
+			    <mask id="s4">
+			    	<rect class="borrar"/>
+			      <circle class="circulo D"  />
+			      <circle class="circulo B"/>
+			      <circle class="circulo A"/>
+			    </mask>
+			    <mask id="s3">
+			    	<rect class="borrar"/>
+			      <circle class="circulo C"  />
+			      <circle class="circulo B"/>
+			      <circle class="circulo A"/>
+			    </mask>
+			    <mask id="s5">
+			    	<rect class="borrar"/>
+			      <circle class="circulo C"  />
+			      <circle class="circulo D"/>
+			      <circle class="circulo A" mask="url(#s1)"/>
+			      <circle class="circulo B" mask="url(#s2)"/>
+			    </mask>
+			    <mask id="s6">
+			    	<rect class="borrar"/>
+			      <circle class="circulo C"  />
+			      <circle class="circulo A"/>
+			      <circle class="circulo A" mask="url(#s3)"/>
+			      <circle class="circulo B" mask="url(#s2)"/>
+			    </mask>
+			    <mask id="s7">
+			    	<rect class="borrar"/>
+			      <circle class="circulo B"  />
+			      <circle class="circulo A"/>
+			      <circle class="C" mask="url(#s3)" />
+				  <circle class="D" mask="url(#s4)" />
+			    </mask>
+			    <mask id="s8">
+			    	<rect class="borrar"/>
+					<circle class="circulo B"  />
+					<circle class="circulo D"/>
+					<circle class="A" mask="url(#s1)" />
+					<circle class="D" mask="url(#s4)" />
+			    </mask>
+			    <mask id="s9">
+			    	<rect class="borrar"/>
+			    	<circle class="D" />
+					<circle class="A" mask="url(#s1)" />
+					<circle class="A" mask="url(#s5)" />
+					<circle class="A" mask="url(#s8)" />
+			    </mask>
+			    <mask id="s10">
+			    	<rect class="borrar"/>
+			    	<circle class="C" />
+					<circle class="B" mask="url(#s2)" />
+					<circle class="A" mask="url(#s5)" />
+					<circle class="B" mask="url(#s6)" />
+			    </mask>
+			    <mask id="s11">
+			    	<rect class="borrar"/>
+			    	<circle class="A" />
+					<circle class="D" mask="url(#s3)" />
+					<circle class="B" mask="url(#s6)" />
+					<circle class="C" mask="url(#s7)" />
+			    </mask>
+			    <mask id="s12">
+			    	<rect class="borrar"/>
+			    	<circle class="B" />
+					<circle class="C" mask="url(#s4)" />
+					<circle class="C" mask="url(#s7)" />
+					<circle class="A" mask="url(#s8)" />
+			    </mask>
+			    <mask id="s13">
+			    	<rect class="borrar"/>
+					<circle class="A" mask="url(#s1)" />
+					<circle class="B" mask="url(#s2)" />
+					<circle class="D" mask="url(#s3)" />
+					<circle class="C" mask="url(#s4)" />		
+
+					<circle class="A" mask="url(#s5)" />
+					<circle class="B" mask="url(#s6)" />
+					<circle class="C" mask="url(#s7)" />
+					<circle class="A" mask="url(#s8)" />
+
+					<circle class="A" mask="url(#s9)" />
+					<circle class="B" mask="url(#s10)" />
+					<circle class="D" mask="url(#s11)" />
+					<circle class="C" mask="url(#s12)" />
+			    </mask>
+			</defs>
+			<circle class="A circulo contorno" />
+			<circle class="B circulo contorno"  />
+			<circle class="C circulo contorno" />
+			<circle class="D circulo contorno" />
+		
+			<circle class="A" mask="url(#s1)" />
+			<circle class="B" mask="url(#s2)" />
+			<circle class="D" mask="url(#s3)" />
+			<circle class="C" mask="url(#s4)" />
+
+			<circle class="A" mask="url(#s9)" />
+			<circle class="B" mask="url(#s10)" />
+			<circle class="D" mask="url(#s11)" />
+			<circle class="C" mask="url(#s12)" />
+
+			Sorry, your browser does not support inline SVG.
+		</svg>
+	</body>
+</html>
