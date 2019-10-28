@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<style type="text/css" media="screen">
+  			@import 'estilos.css';
+  			@import 'estilos5.css';
+		</style>
+		<svg width="500" height="500">
+			<defs>
+			    <mask id="s1">
+					<rect class="borrar"/>
+					<circle class="circulo D"  />
+					<circle class="circulo C"/>
+					<circle class="circulo B"/>
+					<circle class="circulo E"/>
+			    </mask>
+			    <mask id="s2">
+					<rect class="borrar"/>
+					<circle class="circulo D"  />
+					<circle class="circulo C"/>
+					<circle class="circulo A"/>
+					<circle class="circulo E"/>
+			    </mask>
+			    <mask id="s3">
+					<rect class="borrar"/>
+					<circle class="circulo D"  />
+					<circle class="circulo A"/>
+					<circle class="circulo B"/>
+					<circle class="circulo E"/>
+			    </mask>
+			    <mask id="s4">
+					<rect class="borrar"/>
+					<circle class="circulo A"  />
+					<circle class="circulo C"/>
+					<circle class="circulo B"/>
+					<circle class="circulo E"/>
+			    </mask>
+			    <mask id="s5">
+					<rect class="borrar"/>
+					<circle class="circulo A"  />
+					<circle class="circulo C"/>
+					<circle class="circulo B"/>
+					<circle class="circulo D"/>
+			    </mask>
+			    <mask id="s6">
+					<rect class="borrar"/>
+					<circle class="circulo D"  />
+					<circle class="circulo C"/>
+					<circle class="circulo E"/>
+					<circle class="A" mask="url(#s1)" />
+					<circle class="B" mask="url(#s2)" />
+			    </mask>
+			    <mask id="s7">
+					<rect class="borrar"/>
+					<circle class="circulo D"  />
+					<circle class="circulo A"/>
+					<circle class="circulo E"/>
+					<circle class="B" mask="url(#s2)" />
+					<circle class="C" mask="url(#s3)" />
+			    </mask>
+			    <mask id="s8">
+					<rect class="borrar"/>
+					<circle class="circulo A"/>
+					<circle class="circulo B"/>
+					<circle class="circulo E"/>
+					<circle class="C" mask="url(#s3)" />
+					<circle class="D" mask="url(#s4)" />
+			    </mask>
+			    <mask id="s9">
+					<rect class="borrar"/>
+					<circle class="circulo A"  />
+					<circle class="circulo C"/>
+					<circle class="circulo B"/>
+					<circle class="D" mask="url(#s4)" />
+					<circle class="E" mask="url(#s5)" />
+			    </mask>
+			    <mask id="s10">
+					<rect class="borrar"/>
+					<circle class="circulo C"/>
+					<circle class="circulo B"/>
+					<circle class="circulo D"/>
+					<circle class="A" mask="url(#s1)" />
+					<circle class="E" mask="url(#s5)" />		
+			    </mask>
+			    <mask id="s11">
+					<rect class="borrar"/>
+					<circle class="circulo D"  />
+					<circle class="circulo C"/>
+					<circle class="A" mask="url(#s1)" />
+					<circle class="A" mask="url(#s6)" />
+					<circle class="E" mask="url(#s10)" />
+			    </mask>
+			    <mask id="s12">
+					<rect class="borrar"/>
+					<circle class="circulo D"  />
+					<circle class="circulo E"/>
+					<circle class="B" mask="url(#s2)" />
+					<circle class="A" mask="url(#s6)" />
+					<circle class="B" mask="url(#s7)" />
+			    </mask>
+			    <mask id="s13">
+					<rect class="borrar"/>
+					<circle class="circulo A"/>
+					<circle class="circulo E"/>
+					<circle class="C" mask="url(#s3)" />
+					<circle class="B" mask="url(#s7)" />
+					<circle class="C" mask="url(#s8)" />
+			    </mask>
+			    <mask id="s14">
+					<rect class="borrar"/>
+					<circle class="circulo A"  />
+					<circle class="circulo B"/>
+					<circle class="D" mask="url(#s4)" />
+					<circle class="C" mask="url(#s8)" />
+					<circle class="D" mask="url(#s9)" />
+			    </mask>
+			    <mask id="s15">
+					<rect class="borrar"/>
+					<circle class="circulo C"/>
+					<circle class="circulo B"/>
+					<circle class="E" mask="url(#s5)" />
+					<circle class="D" mask="url(#s9)" />
+					<circle class="E" mask="url(#s10)" />
+			    </mask>
+			    <mask id="s16">
+					<rect class="borrar"/>
+					<circle class="circulo D"  />
+					<circle class="A" mask="url(#s1)" />
+					<circle class="A" mask="url(#s6)" />
+					<circle class="E" mask="url(#s10)" />
+					<circle class="A" mask="url(#s11)" />
+					<circle class="B" mask="url(#s12)" />
+			    </mask>
+			    <mask id="s17">
+					<rect class="borrar"/>
+					<circle class="circulo E"/>
+					<circle class="B" mask="url(#s2)" />
+					<circle class="A" mask="url(#s6)" />
+					<circle class="B" mask="url(#s7)" />
+					<circle class="B" mask="url(#s12)" />
+					<circle class="C" mask="url(#s13)" />
+			    </mask>
+			    <mask id="s18">
+					<rect class="borrar"/>
+					<circle class="circulo A"/>
+					<circle class="C" mask="url(#s3)" />
+					<circle class="B" mask="url(#s7)" />
+					<circle class="C" mask="url(#s8)" />
+					<circle class="C" mask="url(#s13)" />
+					<circle class="D" mask="url(#s14)" />
+			    </mask>
+			    <mask id="s19">
+					<rect class="borrar"/>
+					<circle class="circulo B"/>
+					<circle class="D" mask="url(#s4)" />
+					<circle class="C" mask="url(#s8)" />
+					<circle class="D" mask="url(#s9)" />
+					<circle class="D" mask="url(#s14)" />
+					<circle class="E" mask="url(#s15)" />
+			    </mask>
+			    <mask id="s20">
+					<rect class="borrar"/>
+					<circle class="circulo C"/>
+					<circle class="E" mask="url(#s5)" />
+					<circle class="D" mask="url(#s9)" />
+					<circle class="E" mask="url(#s10)" />
+					<circle class="A" mask="url(#s11)" />
+					<circle class="E" mask="url(#s15)" />
+			    </mask>
+			    <mask id="s21">
+					<rect class="borrar"/>
+					<circle class="A" mask="url(#s1)" />
+					<circle class="A" mask="url(#s6)" />
+					<circle class="E" mask="url(#s10)" />
+					<circle class="A" mask="url(#s11)" />
+					<circle class="B" mask="url(#s12)" />
+					<circle class="E" mask="url(#s15)" />
+					<circle class="A" mask="url(#s16)" />
+					<circle class="B" mask="url(#s17)" />
+					<circle class="D" mask="url(#s19)" />
+					<circle class="E" mask="url(#s20)" />
+			    </mask>
+			</defs>
+					<circle class="A circulo contorno" />
+					<circle class="B circulo contorno"  />
+					<circle class="C circulo contorno" />
+					<circle class="D circulo contorno" />
+					<circle class="E circulo contorno" />
+
+				
+
+					<circle class="A" mask="url(#s6)" />
+					<circle class="B" mask="url(#s7)" />
+					<circle class="C" mask="url(#s8)" />
+					<circle class="D" mask="url(#s9)" />
+					<circle class="E" mask="url(#s10)" />
+
+					
+
+					<circle class="A" mask="url(#s21)" />
+			Sorry, your browser does not support inline SVG.
+		</svg>
+	</body>
+</html>
