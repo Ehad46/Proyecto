@@ -5,7 +5,8 @@
   			@import 'estilos.css';
   			@import 'estilos5.css';
 		</style>
-		<svg width="500" height="500">
+		<svg width="255" height="250">
+			<rect width="255" height="250" class="contornoR"/>
 			<defs>
 			    <mask id="s1">
 					<rect class="borrar"/>
@@ -180,6 +181,14 @@
 					<circle class="D" mask="url(#s19)" />
 					<circle class="E" mask="url(#s20)" />
 			    </mask>
+			    <mask id="s22">
+					<rect class="borrar"/>
+					<circle class="circulo A"/>
+					<circle class="circulo D"  />
+					<circle class="circulo C"/>
+					<circle class="circulo B"/>
+					<circle class="circulo E"/>
+			    </mask>
 			</defs>
 					<circle class="A circulo contorno" />
 					<circle class="B circulo contorno"  />
@@ -187,7 +196,11 @@
 					<circle class="D circulo contorno" />
 					<circle class="E circulo contorno" />
 
-				
+					<circle class="A" mask="url(#s1)" />
+					<circle class="B" mask="url(#s2)" />
+					<circle class="C" mask="url(#s3)" />
+					<circle class="D" mask="url(#s4)" />
+					<circle class="E" mask="url(#s5)" />
 
 					<circle class="A" mask="url(#s6)" />
 					<circle class="B" mask="url(#s7)" />
@@ -195,9 +208,21 @@
 					<circle class="D" mask="url(#s9)" />
 					<circle class="E" mask="url(#s10)" />
 
-					
+					<circle class="A" mask="url(#s11)" />
+					<circle class="B" mask="url(#s12)" />
+					<circle class="C" mask="url(#s13)" />
+					<circle class="D" mask="url(#s14)" />
+					<circle class="E" mask="url(#s15)" />
+
+					<circle class="A" mask="url(#s16)" />
+					<circle class="B" mask="url(#s17)" />
+					<circle class="C" mask="url(#s18)" />
+					<circle class="D" mask="url(#s19)" />
+					<circle class="E" mask="url(#s20)" />
 
 					<circle class="A" mask="url(#s21)" />
+
+					<rect width="255" height="250" mask="url(#s22)" />
 			Sorry, your browser does not support inline SVG.
 		</svg>
 	</body>

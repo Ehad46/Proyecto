@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<style type="text/css" media="screen">
+  			@import 'estilos.css';
+  			@import 'estilos3.css';
+		</style>
+		<svg width="241" height="231">
+			<rect width="241" height="231" class="contornoR"/>
+			<defs>
+			    <mask id="s1">
+			    	<rect class="borrar"/>
+			      <circle class="circulo C"/>
+			      <circle class="circulo B"/>
+			    </mask>
+			    <mask id="s2">
+			    	<rect class="borrar"/>
+			      <circle class="circulo C"/>
+			      <circle class="circulo A"/>
+			    </mask>
+			    <mask id="s3">
+			    	<rect class="borrar"/>
+			      <circle class="circulo B"/>
+			      <circle class="circulo A"/>
+			    </mask>
+			    <mask id="s4">
+			    	<rect class="borrar"/>
+			      <circle class="circulo C"/>
+			      <circle class="circulo A" mask="url(#s1)"/>
+			      <circle class="circulo B" mask="url(#s2)"/>
+			    </mask>
+			    <mask id="s5">
+			    	<rect class="borrar"/>
+			      <circle class="circulo A"/>
+			      <circle class="circulo C" mask="url(#s3)"/>
+			      <circle class="circulo B" mask="url(#s2)"/>
+			    </mask>
+			    <mask id="s6">
+			    	<rect class="borrar"/>
+			      <circle class="circulo B"/>
+			      <circle class="circulo C" mask="url(#s3)"/>
+			      <circle class="circulo A" mask="url(#s1)"/>
+			    </mask>
+			    <mask id="s7">
+			    	<rect class="borrar"/>
+			    	<circle class="A" mask="url(#s1)" />
+				  <circle class="A" mask="url(#s4)" />
+				  <circle class="A" mask="url(#s6)" />
+				  <circle class="C" mask="url(#s3)" />
+			      <circle class="B" mask="url(#s2)" />
+				  <circle class="B" mask="url(#s5)" />
+			    </mask>
+			    <mask id="s8">
+			    	<rect class="borrar"/>
+					<circle class="circulo B"  />
+					<circle class="circulo A"/>
+					<circle class="circulo C"/>
+			    </mask>
+			</defs>
+
+			<circle class="A circulo contorno" />
+			<circle class="B circulo contorno"  />
+			<circle class="C circulo contorno" />
+
+
+			<circle class="A" mask="url(#s1)" />
+			<circle class="B" mask="url(#s2)" />
+			<circle class="C" mask="url(#s3)" />
+
+			<circle class="A" mask="url(#s4)" />
+			<circle class="B" mask="url(#s5)" />
+			<circle class="A" mask="url(#s6)" />
+
+			<circle class="C" mask="url(#s7)" />
+
+			<rect width="241" height="231" mask="url(#s8)" />
+
+			Sorry, your browser does not support inline SVG.
+		</svg>
+	</body>
+</html>

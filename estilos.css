@@ -8,3 +8,8 @@
     height:100%;
     fill:white;
 }
+.contornoR{
+	stroke:green;
+	stroke-width:1;
+	fill:transparent;
+}
